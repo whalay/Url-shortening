@@ -1,10 +1,12 @@
 import React from "react";
+import UrlList from "./UrlList";
 
-
-const Section = () => {
+const Section = ({ link, inputText }) => {
   return (
-  <div className="bg-Gray h-full md:p-20 pt-20 p-5   ">
-  
+    <div className="bg-Gray h-full md:p-20 pt-20 p-5   ">
+
+      {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} inputText={inputText} />)}
+
       <div className="text-center pt-20">
         <h3 className="text-5xl font-bold">Advanced Statistics</h3>
         <p className="text-xl">
@@ -34,11 +36,9 @@ const Section = () => {
             customizable links, supercharging audience engagement.{" "}
           </p>
         </div>
-  
+      </div>
     </div>
-
-  </div>
-    );
+  );
 };
 
 export default Section;

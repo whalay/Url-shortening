@@ -13,8 +13,8 @@ module.exports = {
 
                 'Gray': 'hsl(0, 0%, 75%)',
                 'Grayish_Violet': 'hsl(257, 7%, 63%)',
-                'Very Dark Blue': 'hsl(255, 11%, 22%)',
-                'Very Dark Violet': 'hsl(260, 8%, 14%)',
+                'Very_Dark_Blue': 'hsl(255, 11%, 22%)',
+                'Very_Dark_Violet': 'hsl(260, 8%, 14%)',
 
 
             },

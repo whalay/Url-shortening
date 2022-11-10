@@ -1,27 +1,7 @@
 import React, { useState } from "react";
 
-const UrlForm = () => {
-  const [inputText, setInputText] = useState("");
-  const [inputIsValid, setInputIsValid] = useState(true);
-
-  const inputHandler = (e) => {
-    setInputText(e.target.value);
-  };
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-
-    if (inputText.trim() != "") {
-      setInputIsValid(true);
-    } else {
-      setInputIsValid(false);
-      return;
-    }
-
-    console.log(inputText);
-
-    setInputText("");
-  };
+const UrlForm = ({inputText, inputHandler, submitHandler, inputIsValid}) => {
+ 
 
   return (
     <div className=" absolute -bottom-[250px] md:-bottom-[220px]   z-[9999] w-full">
@@ -35,7 +15,7 @@ const UrlForm = () => {
             value={inputText}
             type="text"
             placeholder="shorten a link here ..."
-            className={`flex-1 p-3 rounded-lg outline-none  w-full  ${
+            className={`flex-1 p-3 rounded-lg outline-none  w-full text-xl   ${
               !inputIsValid ? " border-2 border-red-500" : "border-none"
             }`}
           />

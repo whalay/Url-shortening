@@ -4,7 +4,7 @@ import illustration from "../assets/images/illustration-working.svg";
 import UrlForm from "./UrlForm";
 const Hero = () => {
   return (
-    <div className="md:p-20 mb-5   max-w-screen h-screen  ">
+    <div className="md:py-20 md:pl-20 mb-5   max-w-screen h-screen  ">
       <div className=" flex flex-col md:flex-row-reverse  justify-between items-center  ">
         <div className="flex-initial ">
           <img src={illustration} alt="" className="" />
