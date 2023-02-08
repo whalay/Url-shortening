@@ -1,11 +1,11 @@
 import React from "react";
 import UrlList from "./UrlList";
 
-const Section = ({ link, inputText }) => {
+const Section = ({ link, inputText, handleCopy, buttonText }) => {
   return (
     <div className="bg-Gray h-full md:p-20 pt-20 p-5   ">
 
-      {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} inputText={inputText} />)}
+      {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} handleCopy={handleCopy} buttonText={buttonText}/>)}
 
       <div className="text-center pt-20">
         <h3 className="text-5xl font-bold">Advanced Statistics</h3>

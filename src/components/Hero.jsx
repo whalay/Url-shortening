@@ -4,10 +4,10 @@ import illustration from "../assets/images/illustration-working.svg";
 import UrlForm from "./UrlForm";
 const Hero = () => {
   return (
-    <div className="md:py-20 md:pl-20 mb-5   max-w-screen h-screen  ">
+    <div className="md:py-20 md:pl-20 mb-32 md:mb-5   max-w-screen h-full  ">
       <div className=" flex flex-col md:flex-row-reverse  justify-between items-center  ">
         <div className="flex-initial ">
-          <img src={illustration} alt="" className="" />
+          <img src={illustration} alt="" className="md:ml-20" />
         </div>
         <div className="md:text-left text-center ">
           <h1 className="text-4xl md:text-7xl  font-bold py-4 px-4">

@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <section className="flex justify-between md:px-20  p-5 items-center">
-      <div className="flex gap-10">
+    <section className="flex justify-between md:px-20  p-5 items-center cursor-pointer">
+      <div className="flex gap-10 ">
         <img src={logo} alt="" />
         <ul className="hidden md:flex gap-5">
           <li>Features</li>
