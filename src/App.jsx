@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Section from "./components/Section";
 import UrlForm from "./components/UrlForm";
+import Mavbar from "./components/Navbar";
 
 // const getLocalStorage = () => {
 //   let links = localStorage.getItem("links")
@@ -51,10 +52,7 @@ function App() {
     }
   };
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(link.full_short_link)
-    setButtonText("Copied!")
-  }
+
 
   useEffect(() => {
     localStorage.setItem("link", JSON.stringify(link))
@@ -83,7 +81,7 @@ function App() {
       <Navbar />
       <Hero />
       <UrlForm inputText={inputText} submitHandler={submitHandler} inputHandler={inputHandler} inputIsValid={inputIsValid}/>
-      <Section link={link} buttonText={buttonText} handleCopy={handleCopy}/>
+      <Section link={link} />
       <Boost />
       <Footer />
     </div>

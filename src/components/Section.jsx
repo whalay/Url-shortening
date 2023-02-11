@@ -1,14 +1,14 @@
 import React from "react";
 import UrlList from "./UrlList";
 
-const Section = ({ link, inputText, handleCopy, buttonText }) => {
+const Section = ({ link, inputText }) => {
   return (
     <div className="bg-Gray h-full md:p-20 pt-20 p-5   ">
 
-      {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} handleCopy={handleCopy} buttonText={buttonText}/>)}
+      {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} />)}
 
       <div className="text-center pt-20">
-        <h3 className="text-5xl font-bold">Advanced Statistics</h3>
+        <h3 className=" text-3xl md:text-5xl font-bold pb-5">Advanced Statistics</h3>
         <p className="text-xl">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
