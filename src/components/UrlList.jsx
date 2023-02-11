@@ -4,7 +4,7 @@ const UrlList = ({ shortLink }) => {
   const [isClicked, setIsClicked] = useState(false);
   return (
     <div>
-      <ul className="bg-white md:flex justify-between items-center p-3 m-2 text-lg font-semibold">
+      <ul className="bg-white md:flex justify-between items-center p-3 m-2  text-lg font-semibold">
         <li>{shortLink.original_link}</li>
         <span className=" md:flex gap-5 items-center block  ">
           <li className="text-Cyan py-3 ">{shortLink.full_short_link}</li>

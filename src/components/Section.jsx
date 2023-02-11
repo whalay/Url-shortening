@@ -3,7 +3,8 @@ import UrlList from "./UrlList";
 
 const Section = ({ link, inputText }) => {
   return (
-    <div className="bg-Gray h-full md:p-20 pt-20 p-5   ">
+    <div className="bg-Gray h-full md:p-20 pt-20 p-5    ">
+      <div className="mt-20 md:mt-5">
 
       {link && link.map((shortLink, index) => <UrlList key={index} shortLink={shortLink} />)}
 
@@ -14,7 +15,7 @@ const Section = ({ link, inputText }) => {
           statistics dashboard.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row m-8 gap-5 items-stretch   ">
+      <div className="flex flex-col md:flex-row pt-10 gap-5 items-stretch   ">
         <div className="relative self-start bg-white px-5 pt-20  py-10   text-center before:absolute before:bg-brand before:top-[-30px] before:left-[40%] md:before:left-[45%] before:p-11  before:bg-fit  before:bg-Dark_Violet before:rounded-full before:bg-center before:bg-no-repeat  ">
           <h3 className="text-2xl font-bold py-3">Brand Recognition</h3>
           <p className="text-xl font-semi-bold ">
@@ -37,6 +38,7 @@ const Section = ({ link, inputText }) => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
